@@ -11,6 +11,7 @@ targets:
   SwiftUITimelineViewDemo:
     type: application
     platform: macOS
+    productName: SwiftUITimelineViewDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUITimelineViewDemo:
+    build:
+      targets:
+        SwiftUITimelineViewDemo: all
+    run:
+      config: Debug
